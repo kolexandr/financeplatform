@@ -31,10 +31,10 @@ public class Transaction {
     @JoinColumn(name = "category_id", nullable = false)
     private Category category;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 100)
     private String provider;
 
-    @Column(nullable = false)
+    @Column(length = 500)
     private String description;
 
     @Column(nullable = false, precision = 19, scale = 2)
